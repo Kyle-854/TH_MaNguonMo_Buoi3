@@ -1,10 +1,29 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 int tong(int a, int b);
 int hieu(int a, int b);
 int tich(int a, int b);
 float thuong(int a, int b);
+
+bool ktSNT(int n);
+
+bool ktSNT(int n) {
+    if (n <= 1) {
+        return false;
+    }
+
+    int limit = sqrt(n);
+    
+    for (int i = 2; i <= limit; ++i) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 int tong(int a, int b){
 	return a + b
