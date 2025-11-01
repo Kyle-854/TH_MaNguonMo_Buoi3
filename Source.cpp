@@ -10,6 +10,11 @@ int tong(int a, int b){
 	return a + b
 }
 
+int tich (int a, int b)
+{
+	return a * b;
+}
+
 int main()
 {
 	int a,b;
@@ -21,6 +26,7 @@ int main()
 	cin >> b;
 	
 	cout << "\nTong cua " << a << " va " << b << " la: " << tong(a, b) <<endl;
+	cout << "\nTich cua " << a << " va " << b << " la: " << tich(a, b) <<endl;
 	system("pause");
 	return 0;
 }
