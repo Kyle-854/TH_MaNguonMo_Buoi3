@@ -13,9 +13,17 @@ int hieu(int a, int b)
 
 int main()
 {
+	int a,b;
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
+	
+	cout << "Nhap so a: "; 
+	cin >> a;
+	cout << "\nNhap so b: "; 
+	cin >> b;
+	
 	cout<<"Tong =";
-	cout << "\nHieu cua 10 va 5" << hieu(10, 5) << endl;
+	
+	cout << "\nHieu cua " << a << " va " << b << " la: " << hieu(a, b) << endl;
 	system("pause");
 	return 0;
 }
