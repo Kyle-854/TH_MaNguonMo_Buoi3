@@ -17,9 +17,16 @@ int tong(int a, int b){
 
 int main()
 {
+	int a,b;
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
-	cout<<"\nTong cua 10 va 5: "<< tong(10, 5)<<endl;
-	cout << "\nHieu cua 10 va 5" << hieu(10, 5) << endl;
+	
+	cout << "Nhap so a: "; 
+	cin >> a;
+	cout << "\nNhap so b: "; 
+	cin >> b;
+	
+	cout << "\nTong cua " << a << " va " << b << " la: " << tong(a, b) <<endl;
+	cout << "\nHieu cua " << a << " va " << b << " la: " << hieu(a, b) << endl;
 	system("pause");
 	return 0;
 }
